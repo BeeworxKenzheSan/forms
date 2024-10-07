@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcome page</title>
+</head>
+<body>
+    <h1>Блок 1 – паспортные данные</h1>
+    <form>
+        <div>
+            <label for="inn">ИНН:</label>
+            <input id="inn" 
+                   type="text" 
+                   placeholder="Введите ИНН" 
+                   required 
+                   maxlength="14" 
+                   aria-label="Введите ваш ИНН, не более 14 символов" 
+                   aria-required="true">
+        </div>
+        <div>
+            <label for="familiya">Фамилия:</label>
+            <input type="text" 
+                   id="familiya" 
+                   placeholder="Введите фамилию" 
+                   required 
+                   maxlength="50" 
+                   aria-label="Введите вашу фамилию, не более 50 символов" 
+                   aria-required="true">
+        </div>
+        <div>
+            <label for="email">Почта:</label>
+            <input type="email" 
+                id="email" 
+                placeholder="Введите почту" 
+                required 
+                maxlength="50" 
+                aria-label="Введите вашу почут" 
+                aria-required="true">
+        </div>
+        <div>
+            <label for="name">Имя:</label>
+            <input type="text" 
+                   id="name" 
+                   placeholder="Введите имя" 
+                   readonly 
+                   aria-label="Это поле только для чтения"
+                   value="Тут нельзя изменить"
+                   >
+        </div>
+        <div>
+            <label for="date">Дата рождения: </label>
+            <input type="date" 
+                   id="date" 
+                   aria-label="Выберите дату рождения">
+        </div>
+        <div>
+            <label for="select">Пол:</label>
+            <select name="" 
+                    id="select" 
+                    aria-label="Выберите ваш пол">
+                <option value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="comments">Дополнительная информация:</label>
+            <textarea id="comments" 
+                      placeholder="Введите дополнительную информацию" 
+                      rows="4" 
+                      maxlength="200" 
+                      aria-label="Введите дополнительную информацию, не более 200 символов"></textarea>
+        </div>
+    
+        <div>
+            <label>Выберите категорию:</label>
+            <div>
+                <input type="radio" id="category1" name="category" value="Категория 1" aria-label="Выберите категорию 1">
+                <label for="category1">Категория 1</label>
+            </div>
+            <div>
+                <input type="radio" id="category2" name="category" value="Категория 2" aria-label="Выберите категорию 2">
+                <label for="category2">Категория 2</label>
+            </div>
+            <div>
+                <input type="radio" id="category3" name="category" value="Категория 3" aria-label="Выберите категорию 3">
+                <label for="category3">Категория 3</label>
+            </div>
+        </div>
+    
+        <div>
+            <input type="checkbox" 
+                   id="belgiloo" 
+                   aria-label="Сохранить мои данные">
+            <label for="belgiloo">Сохранить мои данные</label>
+        </div>
+        <button type="submit">Сохранить и продолжить</button>
+    </form>
+</body>
+</html>
